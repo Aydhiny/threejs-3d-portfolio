@@ -1,15 +1,70 @@
 import React from 'react';
-import Tilt from 'react-tilt';
+import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
-import { sesrvices } from '../constants';
+import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import slika from '../assets/personalImgs/profile.jpg'
 
-const About = () => {
+import { SectionWrapper } from '../hoc';
+
+const ServiceCard = ({index, title, icon}) => {
   return (
-    <div>About</div>
+    <Tilt className="xs:w-[250px] w-full">
+      <motion.div variants={fadeIn("right", "spring", 0.5 * index, 0.74)} className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
+      <div options={{
+        max: 45,
+        scale: 1,
+        speed: 450
+        }} className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
+          <img src={icon} alt={title} className='w-16 h-16 object-contain' />
+          <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
+        </div>
+      </motion.div>
+    </Tilt>
   )
 }
 
-export default About
+const About = () => {
+  return (
+    <>
+      <motion.div variants={textVariant()}>
+        <p className={styles.sectionSubText}>Introduction</p>
+        <h2 className={styles.sectionHeadText}>Overview.</h2>
+      </motion.div>
+
+      <motion.p variants={fadeIn("","", 0.1,1)} className='mt-4 text-secondary text-[17px] 
+      max-w-3xl leading-[30px]'>
+        Currently a student at the Faculty of Information Technologies in Mostar. 
+        My main focus of study is software engineering, 
+        but I also have interests in music production and design.
+        <br /> <br />
+        As a Music Producer, I am known under the pseudonym Aydhiny. 
+        I have been developing my passion for music since I was young, 
+        and today I am proud to say that I have honed my skills. 
+        The creativity that I use in music, 
+        I transfer to my work in software engineering and design. 
+        These three fields inspire me to constantly grow and improve myself.
+        <br /> <br />
+
+        In addition to my academic work and work in music, 
+        I am also involved in UX/UI design, and I apply my knowledge 
+        and skills at Plansio, where I have the opportunity to work on 
+        designing user interface applications and improve their user experience.
+        I am excited about everything I do and am preparing to use my knowledge 
+        and skills to contribute to the world and create something valuable. 
+        If you are interested in collaboration or knowledge exchange, 
+        please feel free to contact me on LinkedIn.
+      </motion.p>
+
+      <div className='mt-20 flex flex-wrap gap-10'>
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service}/>
+        ))}
+      </div>
+    </>
+  )
+}
+
+export default SectionWrapper(About, "about");
