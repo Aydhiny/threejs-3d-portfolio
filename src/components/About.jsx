@@ -46,16 +46,6 @@ const About = () => {
         The creativity that I use in music, 
         I transfer to my work in software engineering and design. 
         These three fields inspire me to constantly grow and improve myself.
-        <br /> <br />
-
-        In addition to my academic work and work in music, 
-        I am also involved in UX/UI design, and I apply my knowledge 
-        and skills at Plansio, where I have the opportunity to work on 
-        designing user interface applications and improve their user experience.
-        I am excited about everything I do and am preparing to use my knowledge 
-        and skills to contribute to the world and create something valuable. 
-        If you are interested in collaboration or knowledge exchange, 
-        please feel free to contact me on LinkedIn.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
