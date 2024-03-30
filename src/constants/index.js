@@ -43,18 +43,22 @@ export const navLinks = [
 const services = [
   {
     title: "Software Engineering",
+    link: "https://github.com/aydhiny",
     icon: web,
   },
   {
     title: "Music Production",
+    link: "https://www.beatstars.com/aydhiny",
     icon: mobile,
   },
   {
     title: "User Interface Design",
+    link: "https://www.instagram.com/plansio_central/",
     icon: backend,
   },
   {
     title: "Social Media Marketing",
+    link: "https://www.linkedin.com/in/ajdin-mehmedovic/",
     icon: creator,
   },
 ];
@@ -119,7 +123,7 @@ const experiences = [
     title: "Music Producer",
     company_name: "Aydhiny Beats",
     icon: starbucks,
-    iconBg: "#383E56",
+    iconBg: "#1D24CA",
     date: "October 2018 - Present",
     points: [
       "A rising music producer with a passion for creating fresh, innovative beats that push the boundaries of the industry.",
@@ -172,88 +176,88 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I've worked with him for over 4+ years in the music industry and we greatly succeeded together.",
+    name: "Call Me G",
+    designation: "CEO",
+    company: "Call Me G Beats",
+    image: "https://yt3.googleusercontent.com/ytc/AIdro_kXmF6NYswe1tk5MghgAmPJP0Ni76OdWB6X-FV6Rg=s900-c-k-c0x00ffffff-no-rj",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
+      "I've never met a more hardworking person in general. A great leader, designer, marketing specialist and producer.",
+    name: "UX Alok",
     designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    company: "ALOK Designs",
+    image: "https://yt3.googleusercontent.com/C48q1Xl1zGW59pBaGl51SwaVG5I5YncdkuATf17b1rkxRuIO3dZTmWasNptyl3B0Z2jRKrrSv34=s900-c-k-c0x00ffffff-no-rj",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "A very determined and versatile individual that likes to prove others wrong. Recommended for teamwork.",
+    name: "Esmir Hero",
+    designation: "CEO",
+    company: "FIT Marketing",
+    image: "https://www.fit.ba/content/public/images/og-image.jpg",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "The Hunter Mouse",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "In this adrenaline-fueled 3D platformer, step into the tiny shoes of a courageous mouse on a mission to conquer treacherous landscapes, outsmart cunning adversaries, and unveil ancient mysteries. 🏆",
     tags: [
       {
-        name: "react",
+        name: "C-sharp",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Unity",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Shaderlab",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Aydhiny/unity-hunter-mouse",
   },
   {
-    name: "Job IT",
+    name: "React Pomodoro Timer",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to schedule their productivity timeline over the day. Serves as a productivity timer using the pomodoro technique. Changeable timers.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "bootstrap",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Javascript",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Aydhiny/react-pomodoro-timer",
   },
   {
-    name: "Trip Guide",
+    name: "React Quote Machine",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A simple web-app that uses a twitter connected API that fetches motivational quotes. Done using React, HTML, CSS and plain JS. One of my beginner projects in web development.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "API",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Javascript",
         color: "pink-text-gradient",
       },
     ],
